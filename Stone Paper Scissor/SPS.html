@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPS GAME</title>
+  <link rel="stylesheet" href="SPS.css">
+</head>
+<body>
+  <div class="head">
+    ROCK PAPER SCISSOR GAME
+  </div>
+  <div class="scores">
+    <p class="js-points"></p>
+    <div class="scores-btn">
+      <button onclick="reset()" id="reset" class="btn-reset"><p>Reset</p></button>
+      <button class="btn-autoplay" onclick="autoPlay();"><p>Auto Play</p></button>
+    </div>
+  </div>
+  <div class="btns">
+    <button onclick="playerMove('Rock')" class="btn-click"><img src="/Images/rock.png" alt="Rock"><p>Rock</p></button>
+    <button onclick="playerMove('Paper')" class="btn-click"><img src="/Images/paper.png" alt="Paper"><p>Paper</p></button>
+    <button onclick="playerMove('Scissor')" class="btn-click"><img src="/Images/scissor.png" alt="scissor"><p>Scissor</p></button>
+  </div>
+  <div class="main-two">
+    <div class="result"> <p>Result:</p> <p class="js-result"></p></div>
+    <div class="moves">
+      <p>Moves:</p><p class="js-moves"></p>
+    </div>
+  <script src="SPS.js"></script>
+</body>
+</html>
